@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="72dp"
+    android:height="72dp"
+    android:viewportWidth="72"
+    android:viewportHeight="72">
+    <group android:name="page_1">
+        <path
+            android:name="shape"
+            android:pathData="M 28 22 L 28 50 L 50 36 Z"
+            android:fillColor="#ffffffff"
+            android:strokeWidth="1"
+            android:strokeLineCap="butt"
+            android:strokeLineJoin="miter"
+            android:strokeMiterLimit="10" />
+        <path
+            android:name="oval"
+            android:pathData="M 35 1 A 34,34,0,1,0,36,70 A 34,34,0,1,0,37,1 Z"
+            android:strokeColor="#ffffffff"
+            android:strokeWidth="2"
+            android:strokeLineCap="butt"
+            android:strokeLineJoin="miter"
+            android:strokeMiterLimit="10" />
+    </group>
+</vector>

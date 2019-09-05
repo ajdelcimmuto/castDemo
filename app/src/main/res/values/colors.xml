@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whiteOp95">#F2ffffff</color>
+    <color name="whiteOp85">#D9ffffff</color>
+    <color name="whiteOp75">#BFffffff</color>
+    <color name="whiteOp50">#80ffffff</color>
+    <color name="whiteOp30">#4Dffffff</color>
+    <color name="whiteOp25">#40ffffff</color>
+    <color name="whiteOp15">#26ffffff</color>
+    <color name="whiteOp10">#1Affffff</color>
+    <color name="whiteOp05">#0Dffffff</color>
+
+    <color name="black">#FF000000</color>
+    <color name="black0p95">#F2000000</color>
+    <color name="black0p85">#D9000000</color>
+    <color name="black0p75">#BF000000</color>
+    <color name="black0p50">#80000000</color>
+    <color name="black0p30">#4D000000</color>
+    <color name="black0p25">#40000000</color>
+    <color name="black0p15">#26000000</color>
+    <color name="black0p10">#1A000000</color>
+    <color name="black0p05">#0D000000</color>
+
+    <color name="orange">#f5a623</color>
+
+    <color name="colorPrimary">@color/fox_gray</color>
+    <color name="colorPrimaryDark">@color/fox_gray_dark</color>
+    <color name="colorAccent">@color/fox_gray</color>
+
+    <color name="fox_blue">#0299ff</color>
+    <color name="fox_gray_dark">#312f31</color>
+    <color name="fox_gray">#000000</color>
+    <color name="fox_grayOp50">#80898989</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="cast_overlay">@color/fox_grayOp50</color>
+    <color name="timerBar">#0981e1</color>
+    <color name="fox_collection_item_gray">#292929</color>
+    <color name="fallback_showcase_gradient_starting_color">#161719</color>
+
+    <color name="red">#ff0000</color>
+
+    <color name="see_more_boarder">#0FFFFFFF</color>
+    
+    <color name="black_overlay">#66000000</color>
+    <color name="playerTextDuration">#80ffffff</color>
+    
+    <color name="cast_expanded_controller_seek_bar_progress_background_tint_color">@color/white
+    </color>
+    <color name="art_subtitle_color">#80FFFFFF</color>
+    <color name="ec_ad_background_color">#80000000</color>
+    <color name="text_ad_more">#80ffffff</color>
+</resources>

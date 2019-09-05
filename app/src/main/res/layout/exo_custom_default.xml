@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:background = "#66000000"
+    tools:background = "@color/black">
+    
+    <!--logos for live TV-->
+    <ImageView
+        android:id = "@+id/player_image_affiliate"
+        android:layout_width = "@dimen/player_controls_affiliate_logo_size"
+        android:layout_height = "@dimen/player_controls_affiliate_logo_size"
+        android:layout_marginStart = "@dimen/player_controls_margin_left"
+        android:visibility = "gone"
+        app:layout_constraintBottom_toBottomOf = "@+id/text_live"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintTop_toTopOf = "@+id/text_live"
+        tools:src = "@drawable/ic_network_fox"
+        tools:visibility = "visible" />
+    
+    <TextView
+        android:id = "@+id/text_live"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginLeft = "@dimen/player_controls_live_text_lmargin"
+        android:alpha = ".5"
+        android:text = "@string/player_live_text"
+        android:textColor = "@color/white"
+        android:textSize = "12sp"
+        android:visibility = "gone"
+        app:layout_constraintBottom_toBottomOf = "@+id/image_full_screen"
+        app:layout_constraintLeft_toRightOf = "@+id/player_image_affiliate"
+        app:layout_constraintTop_toTopOf = "@+id/image_full_screen"
+        app:layout_goneMarginLeft = "@dimen/player_controls_margin_left"
+        tools:visibility = "visible" />
+    
+    <TextView
+        android:id = "@id/exo_position"
+        android:layout_width = "@dimen/player_duration_text"
+        android:layout_height = "0dp"
+        android:layout_marginStart = "@dimen/player_controls_margin_left"
+        android:contentDescription = "@string/player_desc_current_progress"
+        android:gravity = "left|center_vertical"
+        android:text = "0:00:00"
+        android:textAppearance = "@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor = "@android:color/white"
+        android:textSize = "12sp"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toBottomOf = "@id/exo_duration"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintTop_toTopOf = "@id/exo_duration"
+        tools:text = "0:00:00" />
+    
+    
+    <TextView
+        android:id = "@id/exo_duration"
+        android:layout_width = "@dimen/player_duration_text"
+        android:layout_height = "0dp"
+        android:layout_marginEnd = "13dp"
+        android:contentDescription = "@string/player_desc_duration"
+        android:gravity = "right|center_vertical"
+        android:textAppearance = "@style/TextAppearance.AppCompat.Small.Inverse"
+        android:textColor = "@color/playerTextDuration"
+        android:textSize = "12sp"
+        android:textStyle = "bold"
+        app:layout_constraintBottom_toBottomOf = "@+id/image_captions"
+        app:layout_constraintRight_toLeftOf = "@+id/image_captions"
+        app:layout_constraintTop_toTopOf = "@+id/image_captions"
+        tools:text = "0:00:00" />
+        
+    
+        <ImageView
+            android:id = "@id/exo_play"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "@drawable/bg_player_controls"
+            android:contentDescription = "@string/player_desc_pause"
+            android:scaleType = "center"
+            android:src = "@drawable/player_vector_ic_play"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintLeft_toLeftOf = "parent"
+            app:layout_constraintRight_toRightOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+        
+        <ImageView
+            android:id = "@id/exo_pause"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:background = "@drawable/bg_player_controls"
+            android:contentDescription = "@string/player_desc_play"
+            android:scaleType = "center"
+            android:src = "@drawable/player_vector_ic_pause"
+            app:layout_constraintBottom_toBottomOf = "parent"
+            app:layout_constraintLeft_toLeftOf = "parent"
+            app:layout_constraintRight_toRightOf = "parent"
+            app:layout_constraintTop_toTopOf = "parent" />
+   
+    
+    <ImageView
+        android:id = "@+id/player_image_ff_to_live"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:background = "@drawable/bg_player_controls"
+        android:contentDescription = "@string/player_desc_pause"
+        android:scaleType = "center"
+        android:visibility = "invisible"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintLeft_toRightOf = "@+id/player_image_restart_live"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintVertical_bias = ".45"
+        app:srcCompat = "@drawable/ic_vector_ff_to_live"
+        tools:visibility = "visible" />
+    
+    <ImageView
+        android:id = "@+id/player_image_restart_live"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginRight = "30dp"
+        android:background = "@drawable/bg_player_controls"
+        android:contentDescription = "@string/player_desc_pause"
+        android:scaleType = "center"
+        android:visibility = "invisible"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintHorizontal_chainStyle = "packed"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toLeftOf = "@+id/player_image_ff_to_live"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:layout_constraintVertical_bias = ".45"
+        app:srcCompat = "@drawable/ic_vector_restart_live"
+        tools:visibility = "visible" />
+    
+    <TextView
+        android:id = "@+id/text_hint"
+        android:layout_width = "wrap_content"
+        android:layout_height = "0dp"
+        android:contentDescription = "@string/player_desc_hint"
+        android:gravity = "center"
+        android:textAllCaps = "true"
+        android:textColor = "@color/white"
+        android:textSize = "10sp"
+        android:visibility = "invisible"
+        app:layout_constraintBottom_toTopOf = "@+id/exo_progress"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@id/exo_play"
+        tools:text = "Casting to Crystal Cove" />
+    
+    <TextView
+        android:id = "@+id/cast_stream_text"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "20dp"
+        android:layout_marginEnd = "25dp"
+        android:layout_marginBottom = "10dp"
+        android:background = "?attr/selectableItemBackgroundBorderless"
+        android:padding = "10dp"
+        android:text = "@string/cast_stream_text"
+        android:visibility = "gone"
+        app:layout_constraintBottom_toTopOf = "@+id/image_full_screen"
+        app:layout_constraintRight_toRightOf = "parent"
+        tools:visibility = "visible" />
+    
+    <android.support.constraint.Guideline
+        android:id="@+id/vertCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+    
+    
+    <ImageView
+        android:id = "@+id/exo_rew"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginEnd = "72dp"
+        android:background = "?attr/selectableItemBackgroundBorderless"
+        android:contentDescription = "@string/player_desc_rewind"
+        android:padding = "16dp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintRight_toLeftOf = "@id/vertCenter"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:srcCompat = "@drawable/player_vector_ic_rewind15" />
+    
+    <ImageView
+        android:id = "@+id/exo_ffwd"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "72dp"
+        android:background = "?attr/selectableItemBackgroundBorderless"
+        android:contentDescription = "@string/player_desc_fast_forward"
+        android:padding = "16dp"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintLeft_toRightOf = "@id/vertCenter"
+        app:layout_constraintTop_toTopOf = "parent"
+        app:srcCompat = "@drawable/player_vector_ic_fastforward15" />
+    
+    <ImageView
+        android:id = "@+id/image_captions"
+        android:layout_width = "48dp"
+        android:layout_height = "48dp"
+        android:layout_marginBottom = "@dimen/player_controls_margin_bottom"
+        android:background = "?attr/selectableItemBackgroundBorderless"
+        android:scaleType = "center"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintRight_toLeftOf = "@+id/image_full_screen"
+        app:srcCompat = "@drawable/player_vector_ic_cc_off" />
+    
+    <ImageView
+        android:id = "@+id/image_full_screen"
+        android:layout_width = "48dp"
+        android:layout_height = "48dp"
+        android:layout_marginEnd = "@dimen/player_controls_margin_right"
+        android:layout_marginRight = "@dimen/player_controls_margin_right"
+        android:layout_marginBottom = "@dimen/player_controls_margin_bottom"
+        android:background = "?attr/selectableItemBackgroundBorderless"
+        android:scaleType = "center"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:srcCompat = "@drawable/player_vector_ic_fullscreen_open" />
+    
+    
+    
+    <FrameLayout
+        android:id = "@+id/scrubber_metadata_layout"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:layout_marginBottom = "@dimen/player_controls_scrubber_thumb_margin"
+        android:visibility = "gone"
+        app:layout_constraintBottom_toTopOf = "@+id/exo_progress"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        tools:visibility = "visible">
+        
+        <ImageView
+            android:id = "@+id/scrubber_image_view"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:scaleType = "fitCenter"
+            tools:src = "@color/whiteOp50" />
+        
+        <TextView
+            android:id = "@+id/scrubber_progress_text_view"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:layout_gravity = "bottom|center_horizontal"
+            tools:text = "0:00" />
+    </FrameLayout>
+    
+    <com.google.android.exoplayer2.ui.DefaultTimeBar
+        android:id = "@id/exo_progress"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "10dp"
+        android:layout_marginEnd = "10dp"
+        android:clipToPadding = "false"
+        android:contentDescription = "@string/player_desc_video_progress"
+        android:maxHeight = "3dp"
+        app:layout_constraintBottom_toBottomOf = "@id/exo_duration"
+        app:layout_constraintLeft_toRightOf = "@id/exo_position"
+        app:layout_constraintRight_toLeftOf = "@id/exo_duration"
+        app:layout_constraintTop_toTopOf = "@id/exo_duration" />
+</android.support.constraint.ConstraintLayout>

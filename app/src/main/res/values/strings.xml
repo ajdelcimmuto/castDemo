@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">DraggableVideo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment">fragment</string>
+    <string name="hls">https://commondatastorage.googleapis.com/gtv-videos-bucket/CastVideos/hls/TearsOfSteel.m3u8</string>
+    <string name="custom_id">2AA1433C</string>
+
+
+    <string name="title_activity_player">PlayerActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="player_desc_back">Back</string>
+    <string name="player_desc_pause">Pause</string>
+    <string name="player_desc_play">Play</string>
+    <string name="player_desc_rewind">Rewind</string>
+    <string name="player_desc_duration">Duration</string>
+    <string name="player_desc_hint">Hint</string>
+    <string name="player_desc_current_progress">Current progress</string>
+    <string name="player_desc_video_progress">Video Progress</string>
+    <string name="player_desc_fast_forward">Fast Forward</string>
+    <string name="player_desc_video_player">Video Player</string>
+    <string name="cc_enabled_in_settings_title">Captions Enabled in Device Settings</string>
+    <string name="cc_enabled_in_settings_message">To turn off captions, deactivate via your
+        device\'s Settings app.
+    </string>
+    <string name="cc_enabled_in_settings_ok">OK</string>
+
+    <string name="go_to_series_page">Go to Series Page</string>
+    <string name="back_to_series_page">Back to Series Page</string>
+    <string name="go_to_special_page">Go to Special Page</string>
+    <string name="back_to_special_page">Back to Special Page</string>
+    <string name="go_to_movie_page">Go to Movie Page</string>
+    <string name="back_to_movie_page">Back to Movie Page</string>
+    <string name="player_fetch_data_error_ok">Ok</string>
+    <string name="ads_progress_bar">Ads Progress Bar</string>
+    <string name="search_hint">Search</string>
+
+    <string name="expires_1_day">Expires in 1 day</string>
+    <string name="expires_days_fmt">Expires in %d days</string>
+    <string name="expires_hours_fmt">Expires in %d hours</string>
+    <string name="expires_1_hour">Expires in 1 hour</string>
+
+    <string name="player_live_text">LIVE</string>
+    <string name="player_restart_live_text">Restart</string>
+    <string name="player_ff_to_live_text">Watch Live</string>
+    <string name="cast_stream_text">Cast stream?</string>
+
+    <string name="sw_cta_go_to_sw_button_label">%1$s %2$s</string>
+
+    <!--Casting -->
+    <string name="chromecast_overlay_cta">Tap here to cast to your TV</string>
+    <string name="media_route_menu_title">Play on&#8230;</string>
+    <string name="cast_device">Casting To %1$s</string>
+    <string name="cast_loading">Loading</string>
+    <string name="analytics_no_series">no series</string>
+    <string name="analytics_no_season">no season</string>
+    <string name="analytics_no_episode">no episode</string>
+    <string name="analytics_no_title">no title</string>
+
+    <string name="endcard_up_next">UP NEXT %d</string>
+    <string name="endcard_starting_now">STARTING NOW</string>
+
+    <string name="playback_error_dialog_title">Unable To Play Video</string>
+    <string name="playback_error_message">We may be experiencing technical difficulties, please try again later.</string>
+    <string name="program_ended">This program has ended</string>
+    <string name="view_other_live_program">View other live programs</string>
+    <string name="now_playing">NOW PLAYING</string>
+
+    <string name="preview_pass_overlay_portrait_title">Preview Pass</string>
+    <string name="preview_pass_overlay_metric">minutes</string>
+
+    <string name="ec_learn_more">Learn More</string>
+
+    <!-- Concurrency -->
+    <string name="concurrency_monitoring_error_title">Error!</string>
+    <string name="concurrency_monitoring_error_message">You have exceeded your account limits for this service:</string>
+
+    <!-- Dma Blackout -->
+    <string name="blackout_title">Blackout title</string>
+    <string name="blackout_message">Blackout message</string>
+    <string name="blackout_button_label">Blackout button label</string>
+
+    <string name="default_authz_error">Your TV subscription allows you limited access to our content. The content you have selected is unavailable.</string>
+</resources>

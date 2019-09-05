@@ -1,0 +1,76 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="item_bottom_padding">8dp</dimen>
+    <dimen name="player_toolbar_text_size">16sp</dimen>
+
+    <!--for video controls, phone fullscreen (landscape)-->
+    <dimen name="player_controls_margin_left">20dp</dimen>
+    <dimen name="player_controls_margin_bottom">8dp</dimen>
+    <dimen name="player_controls_margin_right">7dp</dimen>
+
+    <dimen name="ads_seek_bar_height">3dp</dimen>
+
+    <dimen name="player_controls_affiliate_logo_size">24dp</dimen>
+    <dimen name="network_bug_size">36dp</dimen>
+    <dimen name="network_bug_margin">32dp</dimen>
+    <dimen name="rating_logo_margin">16dp</dimen>
+    <dimen name="player_controls_live_text_lmargin">10dp</dimen>
+    <dimen name="player_controls_scrubber_thumb_margin">5dp</dimen>
+
+    <dimen name="endcard_cell_height">120dp</dimen>
+    <dimen name="endcard_image_height">80dp</dimen>
+    <dimen name="endcard_network_logo_edge_distance">8dp</dimen>
+    <dimen name="player_duration_text">42dp</dimen>
+
+    <dimen name="live_player_content_height_expanded">180dp</dimen>
+    <dimen name="live_player_content_network_logo_width">30dp</dimen>
+
+    <dimen name="collection_item_logo_size">21dp</dimen>
+    <dimen name="item_collection_title_size">26sp</dimen>
+    <dimen name="art_landscape_loader_size">35dp</dimen>
+    <dimen name="art_potrait_loader_size">60dp</dimen>
+
+    <dimen name="status_bar_height">20dp</dimen>
+
+    <!-- Preview Pass Overlay on Player Screen -->
+    <dimen name="preview_pass_overlay_font">12sp</dimen>
+    <dimen name="preview_pass_overlay_key_padding_right">10dp</dimen>
+    <dimen name="preview_pass_overlay_key_margin_top">20dp</dimen>
+    <dimen name="preview_pass_overlay_key_button_min_height">60dp</dimen>
+    <dimen name="preview_pass_overlay_padding_bottom">40dp</dimen>
+    <dimen name="preview_pass_overlay_padding_right">40dp</dimen>
+    <dimen name="preview_pass_overlay_padding_left">40dp</dimen>
+
+    <!--ec = Expanded Control Fragment -->
+    <dimen name="ec_progress_width">50dp</dimen>
+    <dimen name="ec_iv_down_arrow">10dp</dimen>
+    <dimen name="ec_margin_top">8dp</dimen>
+    <dimen name="ec_title_size">24sp</dimen>
+    <dimen name="ec_sub_title_size">16sp</dimen>
+    <dimen name="ec_spcae_height">9dp</dimen>
+    <dimen name="ec_margin_bottom">16dp</dimen>
+    <dimen name="ec_text_progress_size">12sp</dimen>
+    <dimen name="ec_seek_bar_height">45dp</dimen>
+    <dimen name="ec_margin_left_right">20dp</dimen>
+    <dimen name="ec_seek_bar_max_height">3dp</dimen>
+    <dimen name="ec_ad_count_margin_top">21dp</dimen>
+    <dimen name="ec_margin_start">5dp</dimen>
+    <dimen name="ec_iv_restart_live">30dp</dimen>
+    <dimen name="ec_padding_hint">5dp</dimen>
+    <dimen name="ec_hint_text_size">10sp</dimen>
+    <dimen name="ec_hint_margin_top">24dp</dimen>
+    <dimen name="ec_rewind_margin_end">18dp</dimen>
+    <dimen name="ec_rewind_padding">10dp</dimen>
+    <dimen name="ec_caption_margin_bottom">7dp</dimen>
+    <dimen name="ec_caption_pading">13dp</dimen>
+    <dimen name="ec_stream_margin_end">25dp</dimen>
+    <dimen name="ec_stream_margin_start">20dp</dimen>
+    <dimen name="ec_media_route_margin_left">8dp</dimen>
+    <dimen name="ec_media_route_margin_right">16dp</dimen>
+    <dimen name="ec_title_margin">5dp</dimen>
+
+    <item name="preview_pass_ic_key_scale" format="float" type="dimen">0.65</item>
+</resources>
