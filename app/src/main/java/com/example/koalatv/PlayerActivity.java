@@ -1,17 +1,13 @@
-package com.example.josterman.draggablevideo;
+package com.example.koalatv;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatButton;
-import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.widget.Switch;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentTransaction;
+
+import com.example.josterman.draggablevideo.R;
 import com.google.android.exoplayer2.ui.PlayerControlView;
 
 public class PlayerActivity extends AppCompatActivity implements myExoPlayer.OnFragmentInteractionListener {
@@ -42,7 +38,6 @@ public class PlayerActivity extends AppCompatActivity implements myExoPlayer.OnF
             fragmentTransaction.replace(R.id.fragmentContainer, mExoPlayer, TAG);
             fragmentTransaction.commit();
         }
-
 
     }
 

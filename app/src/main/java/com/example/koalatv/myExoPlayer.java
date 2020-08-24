@@ -1,8 +1,7 @@
-package com.example.josterman.draggablevideo;
+package com.example.koalatv;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.MediaRouteButton;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
@@ -10,8 +9,6 @@ import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.OrientationEventListener;
@@ -20,9 +17,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import androidx.fragment.app.Fragment;
+import androidx.mediarouter.app.MediaRouteButton;
+
+import com.example.josterman.draggablevideo.R;
 import com.google.android.exoplayer2.C;
-import com.google.android.exoplayer2.DefaultLoadControl;
-import com.google.android.exoplayer2.DefaultRenderersFactory;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ExoPlayerFactory;
@@ -38,16 +37,13 @@ import com.google.android.exoplayer2.source.MediaSource;
 import com.google.android.exoplayer2.source.TrackGroupArray;
 import com.google.android.exoplayer2.source.hls.DefaultHlsDataSourceFactory;
 import com.google.android.exoplayer2.source.hls.HlsMediaSource;
-import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection;
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
-import com.google.android.exoplayer2.trackselection.TrackSelection;
 import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
 import com.google.android.exoplayer2.ui.PlaybackControlView;
 import com.google.android.exoplayer2.ui.PlayerControlView;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
-import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 import com.google.android.exoplayer2.util.EventLogger;
 import com.google.android.exoplayer2.util.MimeTypes;
@@ -59,8 +55,9 @@ import com.google.android.gms.cast.MediaQueueItem;
 import com.google.android.gms.cast.framework.CastButtonFactory;
 import com.google.android.gms.cast.framework.CastContext;
 
+import org.jetbrains.annotations.Nullable;
+
 import static android.content.pm.ActivityInfo.SCREEN_ORIENTATION_SENSOR;
-import static com.google.android.exoplayer2.DefaultRenderersFactory.EXTENSION_RENDERER_MODE_PREFER;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -100,10 +97,9 @@ public class myExoPlayer extends Fragment implements View.OnClickListener, ExoPl
     private Handler requestedOrientationHandler;
     private CastPlayer castPlayer;
     private Player currentPlayer;
-    private android.support.v7.app.MediaRouteButton mediaRouteButton;
+    private MediaRouteButton mediaRouteButton;
     private boolean castMediaQueueCreationPending;
-    private android.support.v7.app.MediaRouteButton castControlMediaRouteButton;
-    
+
     public myExoPlayer()
     {
         // Required empty public constructor
@@ -220,7 +216,7 @@ public class myExoPlayer extends Fragment implements View.OnClickListener, ExoPl
     }
     
     private void setMediaRouteButton(View v){
-        mediaRouteButton = (android.support.v7.app.MediaRouteButton)v.findViewById(R.id.media_route_menu_item);
+        mediaRouteButton = (MediaRouteButton)v.findViewById(R.id.media_route_menu_item);
     
         CastButtonFactory.setUpMediaRouteButton(getContext(), mediaRouteButton);
         

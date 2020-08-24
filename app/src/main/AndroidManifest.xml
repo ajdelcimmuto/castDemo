@@ -10,12 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
-            android:name=".PlayerActivity"
+            android:name="com.example.koalatv.PlayerActivity"
             android:label="@string/title_activity_player"
             android:theme="@style/AppTheme"></activity>
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.koalatv.MainActivity"
             android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +26,7 @@
 
         <meta-data
             android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
-            android:value="com.example.josterman.draggablevideo.CastOptionsProvider" />
+            android:value="com.example.koalatv.CastOptionsProvider" />
     </application>
 
     <uses-permission android:name="android.permission.INTERNET" />

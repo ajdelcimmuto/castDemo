@@ -1,4 +1,4 @@
-package com.example.josterman.draggablevideo;
+package com.example.koalatv;
 
 import android.content.Context;
 

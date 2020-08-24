@@ -1,16 +1,18 @@
-package com.example.josterman.draggablevideo;
+package com.example.koalatv;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.AppCompatButton;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import android.support.v7.widget.Toolbar;
 
 // Casting Wire Up
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.appcompat.widget.Toolbar;
+
+import com.example.josterman.draggablevideo.R;
 import com.google.android.gms.cast.framework.CastButtonFactory;
 import com.google.android.gms.cast.framework.CastContext;
 import com.google.android.gms.cast.framework.CastState;
@@ -27,11 +29,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         castContext = CastContext.getSharedInstance(this);
-
-
-
 
         playButton = findViewById(R.id.playButton);
 
@@ -44,10 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 switchActivities();
             }
         });
-
-
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -55,14 +50,11 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu, menu);
 
         mMediaRouteMenuItem = CastButtonFactory.setUpMediaRouteButton(getApplicationContext(),menu,R.id.media_route_menu_item);
-
         return true;
-
     }
+
     public void switchActivities() {
         Intent intent = new Intent(this, PlayerActivity.class);
         startActivity(intent);
     }
-
-
 }
